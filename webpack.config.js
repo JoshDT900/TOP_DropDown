@@ -5,6 +5,7 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
+        controler: './src/controler.js',
       },
   devtool: 'inline-source-map',
   devServer: {
@@ -12,7 +13,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'TOP: Drop Down Element',
+      title: 'TOP: Menu Styles',
     }),
   ],
   output: {
