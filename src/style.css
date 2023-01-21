@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+.menu_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu_item {
+    display: flex;
+    width: 275px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+.nav_item {
+    list-style: none;
+}

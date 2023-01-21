@@ -1,8 +1,7 @@
-let dropDown = () => {
+let dropDown = (ele) => {
     let menuEle = document.querySelector(".menu_wrap");
-    let menuItem = document.querySelector(".menu_item")
 
-    menuItem.addEventListener("click", (e) => {
+    ele.addEventListener("click", (e) => {
         console.log("Works!", e.target)
         menuItems(menuEle);
     })
@@ -21,8 +20,7 @@ let menuItems = (ele) => {
     
             menuEle.setAttribute("class", "menu_item");
     
-            linkEle.setAttribute("href", "#");
-            linkEle.setAttribute("target", "_blank");
+            linkEle.setAttribute("href", "javascript: void(0)");
             linkEle.setAttribute("class", `${menuArr[i].toLowerCase()}_item`);
             linkEle.innerHTML = menuArr[i];
     
@@ -40,9 +38,5 @@ let menuItems = (ele) => {
 
     return newEle;
 }
-
-// (() => {
-//     dropDown()
-// })();
 
 export { dropDown };
