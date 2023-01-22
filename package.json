@@ -2,8 +2,7 @@
   "name": "top_dropdown",
   "version": "1.0.0",
   "author": "David T. - djtroutman900@gmail.com",
-  "description": "",
-  "private": true,
+  "description": "Contains functions for making drop down menu items.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
