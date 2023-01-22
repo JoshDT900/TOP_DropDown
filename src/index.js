@@ -18,7 +18,8 @@ let pageRender = () => {
     menuItemAnchEle.innerHTML = "Drop Down Menu"
     menuItemEle.appendChild(menuItemAnchEle);
 
-    dropDown(menuItemEle);
+    let menuArr = ["Home", "Shop", "My Account", "Payment Settings", "Log Out"]
+    dropDown(menuItemEle, menuArr);
 }
 
 (() => {

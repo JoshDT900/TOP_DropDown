@@ -1,17 +1,16 @@
-let dropDown = (ele) => {
+let dropDown = (ele, arr) => {
     let menuEle = document.querySelector(".menu_wrap");
 
     ele.addEventListener("click", (e) => {
-        console.log("Works!", e.target)
-        menuItems(menuEle);
+        menuItems(menuEle, arr);
     })
 
     return menuEle;
 }
 
-let menuItems = (ele) => {
+let menuItems = (ele, arr) => {
     let newEle = ele;
-    let menuArr = ["Home", "Shop", "My Account", "Payment Settings", "Log Out"];
+    let menuArr = [...arr];
 
     if (ele.children.length === 1) {
         for (let i in menuArr) {
