@@ -1,4 +1,4 @@
-import { dropDown } from "./controler";
+import { dropDown } from "./controller.js";
 import css from "./style.css"
 
 let pageRender = () => {
